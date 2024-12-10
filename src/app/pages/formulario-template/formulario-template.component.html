@@ -1,0 +1,15 @@
+<h1>Template</h1>
+<div class="form-group row">
+    <label class="col-2 col-form-label">Paises</label>
+    <div class="col-8">
+        <select class="form-control" name="pais" 
+         >
+        <option *ngFor="let pais of paises" [value]="pais.codigo">
+           {{pais.codigo}} - {{pais.nombre}}
+
+        </option>
+    </select>
+
+    </div>
+
+</div>

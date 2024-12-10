@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { AcercadeComponent } from './pages/acercade/acercade.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+import { FormularioTemplateComponent } from './pages/formulario-template/formulario-template.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InicioComponent,
+    AcercadeComponent,
+    NavbarComponent,
+    FooterComponent,
+    CapitalizadoPipe,
+    FormularioTemplateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
